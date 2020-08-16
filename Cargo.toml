@@ -1,8 +1,9 @@
 [package]
 name = "message_protocol"
 version = "0.1.0"
-authors = ["Misha Farber Brodsky <misha@farberbrodsky.com>"]
+authors = ["Michael Farber Brodsky <misha@farberbrodsky.com>"]
 edition = "2018"
+license = "MIT"
 
 [dependencies]
 byteorder = "1.3.4"
