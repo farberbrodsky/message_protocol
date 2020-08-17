@@ -9,6 +9,8 @@ homepage = "https://github.com/farberbrodsky/message_protocol"
 readme = "README.md"
 repository = "https://github.com/farberbrodsky/message_protocol"
 keywords = ["networking"]
+exclude = [".gitignore"]
 
 [dependencies]
 byteorder = "1.3.4"
+
