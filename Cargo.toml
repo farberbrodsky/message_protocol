@@ -1,9 +1,14 @@
 [package]
 name = "message_protocol"
+description = "A protocol for seperating binary messages over TCP, similar to WebSockets but more minimal."
 version = "0.1.0"
 authors = ["Michael Farber Brodsky <misha@farberbrodsky.com>"]
 edition = "2018"
 license = "MIT"
+homepage = "https://github.com/farberbrodsky/message_protocol"
+readme = "README.md"
+repository = "https://github.com/farberbrodsky/message_protocol"
+keywords = ["networking"]
 
 [dependencies]
 byteorder = "1.3.4"
