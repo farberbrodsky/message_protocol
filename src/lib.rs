@@ -233,7 +233,6 @@ pub fn listen_to_tcp<T: ToSocketAddrs>(
             thread::spawn(move || {
                 // listen for messages
                 while let Ok(message) = decode_message(&mut iter) {
-                    println!("{:?}", message);
                     tx.send(ClientMessage {
                         message: Message::Bytes(message),
                         address: addr,
@@ -290,7 +289,6 @@ pub fn connect_to_tcp<T: ToSocketAddrs>(
     thread::spawn(move || {
         // listen for messages
         while let Ok(message) = decode_message(&mut iter) {
-            println!("{:?}", message);
             tx.send(Message::Bytes(message));
         }
         tx.send(Message::Close);
